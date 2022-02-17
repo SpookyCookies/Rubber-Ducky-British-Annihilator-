@@ -1,3 +1,4 @@
+REM Created By SpookyCookies Discord:Spooky_Cookies#6399 Or Github:https://github.com/SpookyCookies/Rubber-Ducky-British-Annihilator-
 REM detecting if british
 REM Starting run box and entering powershell
 windows r 
@@ -29,5 +30,7 @@ delay 100
 REM Patriotic Message box thanking you for not being british
 string PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Thanks for not being british')"
 enter
+
+
 
 
